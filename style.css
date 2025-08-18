@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.con {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.con .content {
+  background-color: white;
+  width: 60%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+}
+.con .content .bar {
+  height: 30px;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+.con .content .bar .left-bar {
+  background-color: #2be16a;
+  width: 100%;
+  flex-shrink: 0;
+  height: 100%;
+  transform: translateX(-100%);
+}
+.con .content .bar .right-bar {
+  background-color: grey;
+  width: 100%;
+  flex-shrink: 0;
+  height: 100%;
+  transform: translateX(-100%);
+}
+.con .content .lower-content {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.con .content .lower-content p {
+  font-size: 26px;
+}
+.con .content .download {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.con .content .download button {
+  background-color: #2be16a;
+  color: white;
+  font-size: 22px;
+  padding: 10px 26px;
+  border-radius: 12px;
+}
+.con .content .download p {
+  font-size: 26px;
+}/*# sourceMappingURL=style.css.map */
