@@ -1,22 +1,10 @@
-const btn = document.querySelector(".download button");
-const leftbar = document.querySelector(".content .bar .left-bar");
-const rightbar = document.querySelector(".content .bar .right-bar");
+let img = document.querySelector(".img");
 
-let progressPara = document.querySelector(".right-content p");
-
-let increment = 1;
-btn.addEventListener("click", function () {
-  console.log("btn pressed");
-
-  // bar.style.backgroundColor = "#2be16a";
-  let int = setInterval(function () {
-    leftbar.style.transform = `translateX(-${100 - increment}%)`;
-    rightbar.style.transform = `translateX(-${100 - increment}%)`;
-    progressPara.textContent = `${increment}%`;
-    increment += 1;
-  }, 50);
-
+img.addEventListener("dblclick", function () {
+  img.style.opacity = 0.7;
+  img.classList.add("move");
   setTimeout(function () {
-    clearInterval(int);
-  }, 5000);
+    img.style.opacity = 0;
+    img.classList.remove("move");
+  }, 1000);
 });
